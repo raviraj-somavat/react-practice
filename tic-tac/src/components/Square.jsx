@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Square = () => {
+const Square = (props) => {
   return (
-    <div style={{width:'100px', height:'100px', border:'3px solid black', display:'flex', justifyContent:'center', alignItems:'center'}} className='square'>
-        <h4>x</h4>
+    <div onClick={props.onClick} style={{width:'100px', height:'100px', border:'3px solid black', display:'flex', justifyContent:'center', alignItems:'center'}} className='square'>
+        <h4>{props.value}</h4>
     </div>
   )
 }
